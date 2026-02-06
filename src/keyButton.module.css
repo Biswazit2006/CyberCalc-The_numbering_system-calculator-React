@@ -1,0 +1,68 @@
+
+/* ================================================== */
+/* Button row Contaienr */
+/* ================================================== */
+ .button {
+  width: 100%;
+  font-size: 6vh;
+  font-weight: 600;
+  padding: 12px 0;
+  border: none;
+  cursor: pointer;
+  background-color: #1B9CFC;
+  color:  #ffffff;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+.btn-container
+  .btn-row-container:last-child
+  .button-row-left
+  > .button:first-child {
+  width: 32%;
+}
+.btn-container
+  .btn-row-container:last-child
+  .button-row-left
+  > button:last-child {
+  width: 66%;
+}
+.btn-container .btn-row-container:last-child .btn-row-right > button {
+  width: 98%;
+}
+
+.btn-container .btn-row-container > button {
+  font-size: 6vh;
+  font-weight: 600;
+  padding: 10px;
+  margin: 0 10px 0 10px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--font-light-colour);
+  border-radius: 10px;
+}
+.btn-container .btn-row-container .button-row-left  .disabled {
+  cursor: not-allowed;
+  background-color: var(--desable-colour);
+  transition: 0.2s;
+}
+
+.btn-container .btn-row-container button:hover {
+  background-color: #21618c;
+  background-color: var(--font-dark-colour);
+  transition: 0.2s;
+}
+.btn-container > .btn-row-container > .disabled {
+  cursor: not-allowed;
+  background-color: var(--desable-colour);
+  transition: 0.2s;
+}

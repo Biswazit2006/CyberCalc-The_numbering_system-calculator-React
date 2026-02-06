@@ -1,0 +1,16 @@
+ .baseBtn {
+  width: 20%;
+  height: auto;
+  background-color: #1B9CFC;
+  padding: 20px 0;
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+ .baseBtn:hover {
+  background-color:  #2ed573;
+  transition: 0.2s;
+}

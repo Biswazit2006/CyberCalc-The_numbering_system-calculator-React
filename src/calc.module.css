@@ -1,0 +1,71 @@
+/* ================================================== */
+/* Calculator Container */
+/* ================================================== */
+.calcContainer {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  max-width: 720px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin: auto;
+
+box-shadow: -1px 1px 11px 4px rgba(0,0,0,0.24);
+-webkit-box-shadow: -1px 1px 11px 4px rgba(0,0,0,0.24);
+-moz-box-shadow: -1px 1px 11px 4px rgba(0,0,0,0.24);
+}
+
+/* ================================================== */
+/* Input container */
+/* ================================================== */
+.inputContainer {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 1% 2%;
+  margin-top: 10px;
+}
+.inputContainer .inputRowContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  
+}
+
+
+.inputContainer .inputRowContainer .active {
+  background-color: var(--highlight-colour);
+}
+
+/* ====================================================== */
+/* Buton Container  */
+/* ====================================================== */
+/* .btnContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1% 0 1%;
+} */
+
+
+.btnContainer {
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  /* padding: 0 1% 0 1%; */
+  gap: 10px;
+  padding: 0 10px 10px 10px;
+  /* background-color: aquamarine; */
+}
+.btnContainer .zeroBtn{
+  grid-column: span 2;
+}
+.btnContainer .equalBtn{
+  grid-column: span 2;
+}
