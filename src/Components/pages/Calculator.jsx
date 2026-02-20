@@ -10,13 +10,13 @@ export default function Calculator() {
   const CBase = baseContext;
   const baseSet = baseSetContext;
   return (
-    <baseSetContext className="Provider" value={setBase}>
+    <baseSetContext.Provider className="Provider" value={setBase}>
       <baseContext.Provider value={base}>
         <div>
           <Nav />
           <Calc />
         </div>
       </baseContext.Provider>
-    </baseSetContext>
+    </baseSetContext.Provider>
   );
 }
