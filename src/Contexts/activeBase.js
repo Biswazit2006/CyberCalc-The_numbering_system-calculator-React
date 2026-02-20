@@ -1,3 +1,6 @@
 import { createContext } from "react";
 
-export const baseContext = createContext(1);
+ const baseContext = createContext(1);
+ const baseSetContext = createContext(() => {});
+
+export { baseContext, baseSetContext };

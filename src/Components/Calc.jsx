@@ -3,29 +3,30 @@ import style from '../calc.module.css'
 import BaseBtn from './BaseBtn';
 import Input from './Input'
 import KeyButton from './KeyButton';
-import { baseContext } from './../Contexts/activeBase';
+import { baseContext,baseSetContext } from './../Contexts/activeBase';
 
 export default function Calc() {
    const CBase = useContext(baseContext); 
+   const setBase = useContext(baseSetContext)
 
   return (
     <div className={style.calcContainer}>
         <div className={style.inputContainer}>
             <div className={style.inputRowContainer}>
-                <BaseBtn  text="DEC"/>
-                <Input text = "ueftg"/>
-            </div>
-            <div className={style.inputRowContainer}>
-                <BaseBtn  text="BIN"/>
+                <BaseBtn  text="DEC" base={10}/>
                 <Input text = {CBase}/>
             </div>
             <div className={style.inputRowContainer}>
-                <BaseBtn  text="HEX"/>
-                <Input/>
+                <BaseBtn  text="BIN" base={2}/>
+                <Input text = {CBase}/>
             </div>
             <div className={style.inputRowContainer}>
-                <BaseBtn  text="OCT"/>
-                <Input/>
+                <BaseBtn  text="HEX" base={16}/>
+                <Input text = {CBase}/>
+            </div>
+            <div className={style.inputRowContainer}>
+                <BaseBtn  text="OCT" base={8}/>
+                <Input text = {CBase}/>
             </div>
         </div>
         <div className={style.btnContainer}>
